@@ -1,3 +1,4 @@
+setblock 14 112 3 air
 worldborder center 14 112
 worldborder set 2188
 gamemode spectator @a
@@ -5,7 +6,7 @@ time set day
 effect give @a invisibility infinite 1 true
 playsound entity.ender_dragon.growl master @a ~ ~ ~ 1 0.5
 scoreboard objectives add anim dummy
-forceload add -1500 10
+forceload add -1520 -10 -1480 30
 forceload add 100 -236
 scoreboard players set ticks anim 0
 setblock 100 104 -236 dirt
