@@ -1,4 +1,4 @@
-execute as @e[type=armor_stand,tag=camera] at @s run tp @s ~2.290516 ~-0.082654 ~-0.499236 ~-0.36 ~0.1148
+execute as @e[type=armor_stand,tag=camera] at @s run tp @s ~-1.014146 ~-0.031468 ~0.01588 ~0 ~0.2348
 execute as @a run spectate @e[type=armor_stand,tag=camera,limit=1] @s
 scoreboard players add ticks anim 1
 execute if score ticks anim matches ..500 run schedule function grand_event:fly_tick 1t
