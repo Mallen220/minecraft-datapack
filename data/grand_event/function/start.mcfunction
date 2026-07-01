@@ -5,7 +5,20 @@ time set day
 effect give @a invisibility infinite 1 true
 playsound entity.ender_dragon.growl master @a ~ ~ ~ 1 0.5
 scoreboard objectives add anim dummy
+forceload add -1500 10
 scoreboard players set ticks anim 0
+setblock 100 104 -236 dirt
+setblock 101 104 -236 dirt
+setblock 102 104 -236 dirt
+setblock 103 104 -235 dirt
+setblock 103 104 -234 dirt
+setblock 103 104 -233 dirt
+setblock 100 104 -232 dirt
+setblock 101 104 -232 dirt
+setblock 102 104 -232 dirt
+setblock 99 104 -235 dirt
+setblock 99 104 -234 dirt
+setblock 99 104 -233 dirt
 teleport @a -1048.832 147.52693 16.149 90.0 27.4
 kill @e[type=armor_stand,tag=camera]
 summon armor_stand -1048.832 147.52693 16.149 {Tags:["camera"],Invisible:1b,NoGravity:1b,Invulnerable:1b,Rotation:[90.0f,27.4f]}

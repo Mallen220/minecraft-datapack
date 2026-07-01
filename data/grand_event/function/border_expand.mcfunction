@@ -1,5 +1,5 @@
 title @a times 10 60 10
-title @a title {"text":"The border is growing...","color":"gold","bold":true}
+title @a title {"text":"The border grows...","color":"gold","bold":true}
 worldborder add 1000 25s
 playsound block.beacon.activate master @a
 scoreboard players set ticks anim 1
@@ -17,3 +17,7 @@ summon shulker -1497.5 -16 9.5 {Tags:["portal_glow"],Invisible:1b,NoAI:1b,NoGrav
 summon shulker -1499.5 -16 13.5 {Tags:["portal_glow"],Invisible:1b,NoAI:1b,NoGravity:1b,Glowing:1b,Invulnerable:1b}
 summon shulker -1498.5 -16 13.5 {Tags:["portal_glow"],Invisible:1b,NoAI:1b,NoGravity:1b,Glowing:1b,Invulnerable:1b}
 summon shulker -1497.5 -16 13.5 {Tags:["portal_glow"],Invisible:1b,NoAI:1b,NoGravity:1b,Glowing:1b,Invulnerable:1b}
+
+fill -1500 -16 10 -1498 -16 12 iron_block
+setblock -1499 -15 11 beacon
+setblock -1499 -14 11 purple_stained_glass
