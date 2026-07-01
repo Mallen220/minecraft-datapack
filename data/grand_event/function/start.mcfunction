@@ -1,9 +1,15 @@
 worldborder center 14 112
 worldborder set 2188
 time set day
+weather clear
 effect give @a invisibility infinite 1 true
 playsound entity.ender_dragon.growl master @a ~ ~ ~ 1 0.5
 scoreboard objectives add anim dummy
+team add viewers
+team modify viewers seeFriendlyInvisibles false
+team modify viewers nametagVisibility never
+team modify viewers collisionRule never
+team join viewers @a
 forceload add -1520 -10 -1480 30
 forceload add 100 -236
 
