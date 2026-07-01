@@ -9,3 +9,5 @@ forceload remove 100 -236
 kill @e[type=armor_stand,tag=camera]
 effect give @a minecraft:regeneration 2 255 true
 effect give @a minecraft:saturation 2 255 true
+setblock 14 112 3 air
+setblock 14 110 3 minecraft:diamond_block
