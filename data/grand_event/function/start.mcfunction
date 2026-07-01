@@ -27,6 +27,7 @@ execute at @p[tag=initiator] run summon marker ~ ~1.6 ~ {Tags:["center"]}
 execute as @a at @e[type=marker,tag=center,limit=1] rotated as @s run tp @s ^ ^ ^-4 facing entity @e[type=marker,tag=center,limit=1]
 kill @e[type=marker,tag=center]
 gamemode spectator @a
+execute as @a at @s run summon armor_stand ~ ~1.6 ~ {Tags:["intro_cam"],Invisible:1b,NoGravity:1b,Invulnerable:1b}
 
 title @a times 10 40 10
 title @a title {"text":"A force awakens","color":"gold","bold":true}
