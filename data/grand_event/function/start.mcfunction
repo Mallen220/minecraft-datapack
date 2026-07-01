@@ -23,7 +23,9 @@ fill 100 104 -235 102 104 -233 air
 
 tag @a remove initiator
 tag @p add initiator
-execute as @a at @p[tag=initiator] rotated as @s run tp @s ^ ^ ^-4 facing entity @p[tag=initiator] eyes
+execute at @p[tag=initiator] run summon marker ~ ~1.6 ~ {Tags:["center"]}
+execute as @a at @e[type=marker,tag=center,limit=1] rotated as @s run tp @s ^ ^ ^-4 facing entity @e[type=marker,tag=center,limit=1]
+kill @e[type=marker,tag=center]
 gamemode spectator @a
 
 title @a times 10 40 10
