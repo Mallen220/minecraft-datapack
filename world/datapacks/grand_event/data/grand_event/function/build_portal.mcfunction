@@ -1,0 +1,1 @@
+schedule function grand_event:build_portal_1 10t
