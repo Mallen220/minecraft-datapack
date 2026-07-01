@@ -30,9 +30,10 @@ fill 100 104 -235 102 104 -233 air
 tag @a remove initiator
 tag @p add initiator
 execute at @p[tag=initiator] run summon marker ~ ~1.6 ~ {Tags:["center"]}
-execute as @a at @e[type=marker,tag=center,limit=1] rotated as @s run tp @s ^ ^ ^-4 facing entity @e[type=marker,tag=center,limit=1]
-kill @e[type=marker,tag=center]
 gamemode spectator @a
+execute as @a at @e[type=marker,tag=center,limit=1] rotated as @s run teleport @s ~ ~ ~ ~ 0
+execute as @a at @s run teleport @s ^ ^ ^-4 facing entity @e[type=marker,tag=center,limit=1]
+kill @e[type=marker,tag=center]
 execute as @a at @s run summon armor_stand ~ ~1.6 ~ {Tags:["intro_cam"],Invisible:1b,NoGravity:1b,Invulnerable:1b}
 execute as @e[type=armor_stand,tag=intro_cam] at @s run teleport @s ~ ~ ~ facing 14 112 3
 
