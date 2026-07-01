@@ -1,7 +1,8 @@
 effect give @a blindness 2 1 true
 playsound entity.phantom.swoop master @a
-gamemode adventure @a
+gamemode spectator @a
 teleport @a 96.426 106.20000 -233.469 -90.0 30.0
-setblock 96 105 -234 barrier
-kill @e[type=armor_stand,tag=camera]
+execute as @e[type=armor_stand,tag=camera] at @s run tp @s 96.426 106.20000 -233.469 -90.0 30.0
+scoreboard players set ticks anim 501
+schedule function grand_event:post_fly_tick 1t
 schedule function grand_event:build_portal 60t
