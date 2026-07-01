@@ -1,6 +1,5 @@
 scoreboard players add intro_ticks anim 1
 
-execute as @e[type=armor_stand,tag=intro_cam] at @s run teleport @s ~ ~ ~ facing 14 112 3
 execute as @e[type=armor_stand,tag=intro_cam] at @s run tp @s ^ ^ ^0.2
 
 execute as @a at @e[type=armor_stand,tag=intro_cam,sort=nearest,limit=1] rotated as @e[type=armor_stand,tag=intro_cam,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ ~
