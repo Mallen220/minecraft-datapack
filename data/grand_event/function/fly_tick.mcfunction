@@ -1,7 +1,7 @@
 execute as @e[type=armor_stand,tag=camera] at @s run tp @s ~-1.014146 ~-0.031468 ~0.01588 ~0 ~0.1252
 execute as @a at @e[type=armor_stand,tag=camera,limit=1] rotated as @e[type=armor_stand,tag=camera,limit=1] run tp @s ~ ~ ~ ~ ~
 execute as @a run spectate @e[type=armor_stand,tag=camera,limit=1] @s
-data modify block -1499 -15 11 Age set value 0L
+data modify block -1499 180 11 Age set value 0L
 scoreboard players add ticks anim 1
 execute if score ticks anim matches ..500 run schedule function grand_event:fly_tick 1t
 execute if score ticks anim matches 501 run function grand_event:view_3

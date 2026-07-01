@@ -17,5 +17,4 @@ summon shulker -1497.5 -16 9.5 {Tags:["portal_glow"],Invisible:1b,NoAI:1b,NoGrav
 summon shulker -1499.5 -16 13.5 {Tags:["portal_glow"],Invisible:1b,NoAI:1b,NoGravity:1b,Glowing:1b,Invulnerable:1b}
 summon shulker -1498.5 -16 13.5 {Tags:["portal_glow"],Invisible:1b,NoAI:1b,NoGravity:1b,Glowing:1b,Invulnerable:1b}
 summon shulker -1497.5 -16 13.5 {Tags:["portal_glow"],Invisible:1b,NoAI:1b,NoGravity:1b,Glowing:1b,Invulnerable:1b}
-
-setblock -1499 -15 11 end_gateway{Age:0L}
+setblock -1499 180 11 end_gateway{Age:0L}
