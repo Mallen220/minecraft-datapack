@@ -15,13 +15,7 @@ execute store result score #daytime serverend.data run time query minecraft:day
 execute if score #daytime serverend.data matches 0..12999 as @a[tag=serverend.far] run function serverend:effects/day
 execute if score #daytime serverend.data matches 13000..23999 as @a[tag=serverend.far] run function serverend:effects/night
 
-# --- Dynamic tick rate ---
-# Count online players
-scoreboard players set #players serverend.data 0
-execute as @a run scoreboard players add #players serverend.data 1
-
-# 1.5x (30) only when exactly one player is online AND that player is out past the border (tagged far).
-# Otherwise (2+ players online, or the lone player is within the border) run normal speed (20).
-execute if score #players serverend.data matches 1 if entity @a[tag=serverend.far] run tick rate 30
-execute unless score #players serverend.data matches 1 run tick rate 20
-execute if score #players serverend.data matches 1 unless entity @a[tag=serverend.far] run tick rate 20
+# NOTE: dynamic tick rate (1.5x when solo + far, 1.0x otherwise) is NOT handled here.
+# The `tick` command cannot be run from inside a .mcfunction file on this server (confirmed:
+# any file containing it fails to register at all), but it DOES work from a command block.
+# See the command-block setup for that piece instead.

@@ -1,1 +1,0 @@
-say serverend hello test
