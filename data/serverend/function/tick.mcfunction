@@ -5,7 +5,7 @@
 # Spawn point is x=14 z=3 (matches grand_event's finish.mcfunction reference block).
 # Only applies in the overworld.
 tag @a remove serverend.far
-execute as @a[dimension=minecraft:overworld] at @s positioned 14 ~ 3 if entity @s[distance=3188..] run tag @s add serverend.far
+execute as @a at @s in minecraft:overworld positioned 14 ~ 3 if entity @s[distance=3188..] run tag @s add serverend.far
 
 # --- Track daytime for the day/night effect split ---
 # 0-12999 = day, 13000-23999 = night (vanilla lighting convention)
