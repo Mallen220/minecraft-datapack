@@ -9,7 +9,7 @@ execute as @a at @s in minecraft:overworld positioned 14 ~ 3 if entity @s[distan
 
 # --- Track daytime for the day/night effect split ---
 # 0-12999 = day, 13000-23999 = night (vanilla lighting convention)
-execute store result score #daytime serverend.data run time query daytime
+execute store result score #daytime serverend.data run time query minecraft:day
 
 # --- Apply effects only to far-away players ---
 execute if score #daytime serverend.data matches 0..12999 as @a[tag=serverend.far] run function serverend:effects/day
